@@ -1,0 +1,352 @@
+html {
+  font-feature-settings:
+    'calt',
+    'ss01',
+    'ss03',
+    'ss04',
+    'ss06',
+    'ss07',
+    'ss08',
+    'ss10',
+    'liga';
+}
+
+html #slide-content.slidev-slide-content .slidev-layout {
+    --uno: 'text-neutral-300 font-thin';
+
+  p {
+    /* vertical margin for paragraphs */
+    --uno: 'my-8';
+  }
+
+  /* header */
+  :is(h1, h2, h3, h4, h5, h6) {
+    --uno: 'my-4 w-fit relative block font-normal';
+    /* different color for light and dark mode */
+    --uno: 'text-neutral-200';
+    --uno: 'before:(content-[""] absolute w-0 h-2px rounded-sm bg-neutral-300 bottom-0 left-0 transition-width)';
+    --uno: 'hover:(before:w-full)';
+  }
+
+  /* different font size and before content for different header level */
+  h1 {
+    --uno: 'text-4xl/10';
+  }
+
+  h2 {
+    --uno: 'text-3xl/10';
+  }
+
+  h3 {
+    --uno: 'text-2xl/10';
+  }
+
+  h4 {
+    --uno: 'text-xl/10';
+  }
+
+  h5 {
+    --uno: 'text-lg/10';
+  }
+
+  h6 {
+    --uno: 'text-base/10';
+  }
+
+  /* strong */
+  strong {
+    --uno: 'font-black';
+    --uno: 'text-neutral-50';
+  }
+
+  a:not([href^='#'], [href^='/tags/']) {
+    --uno: 'relative inline-block text-nowrap';
+    --uno: 'text-neutral-100';
+  }
+
+  /* underline */
+  u {
+    /* personally prefer wavy style */
+    --uno: 'decoration-(wavy 1)';
+    /* not too close to the text */
+    --uno: 'underline-offset-4';
+  }
+
+  /* inline code */
+  :not(pre)>code {
+    --uno: 'px-1';
+    --uno: 'bg-teal-800/20';
+    --uno: 'text-teal-400';
+    --uno: 'text-0.8em';
+    --uno: 'rounded-sm';
+  }
+
+  /* strikethrough */
+  s {
+    --uno: 'text-neutral-500';
+  }
+
+  /* blockquote */
+  blockquote {
+    --uno: 'my-4 relative px-8 py-2';
+    --uno: 'bg-neutral-50/5';
+    --uno: 'border-l-4 border-neutral-300';
+    --uno: 'transition duration-200';
+    --uno: 'rounded-none';
+    /* blockquote icon */
+    --uno: 'before:(content-[""] i-ph-quotes-duotone block w-8 h-8 absolute right-4 top-4 text-neutral-500 -z-1)';
+
+    & p {
+      --uno: 'my-2';
+    }
+  }
+
+  /* custom block (aka callout, alert)*/
+  .custom-block {
+    --uno: 'my-8 px-8 relative';
+    --uno: 'before:content-[""]';
+    --uno: 'before:(absolute right-4 top-4)';
+    /* style at utilities layer to overwrite width and height set by icon below */
+    --uno: 'before:(inline-block align-middle layer-utilities:w-8 layer-utilities:h-8)';
+    --uno: 'before:opacity-50';
+
+    /* container colors */
+    &.note,
+    &.info,
+    &.details {
+      --uno: 'bg-neutral-900/80';
+      --uno: 'border-(~ neutral-500/50)';
+
+      --uno: 'before:(text-neutral-500)';
+    }
+
+    &.warning {
+      --uno: 'bg-yellow-900/80';
+      --uno: 'border-(~ yellow-500/50)';
+
+      --uno: 'before:(text-yellow-500)';
+    }
+
+    &.tip {
+      --uno: 'bg-indigo-900/80';
+      --uno: 'border-(~ indigo-500/50)';
+
+      --uno: 'before:(text-indigo-500)';
+    }
+
+    &.important {
+      --uno: 'bg-violet-900/80';
+      --uno: 'border-(~ violet-500/50)';
+
+      --uno: 'before:(text-violet-500)';
+    }
+
+    &.caution,
+    &.danger {
+      --uno: 'bg-red-900/80';
+      --uno: 'border-(~ red-500/50)';
+
+      --uno: 'before:(text-red-500)';
+    }
+
+    /* title */
+    & .custom-block-title,
+    & summary {
+      --uno: 'my-8';
+      --uno: 'text-2xl';
+      --uno: 'text-neutral-200';
+    }
+
+    /* icons */
+    &.note {
+      /* icon at layer components to have the width and height overwritten */
+      --uno: 'before:layer-components:(i-ph-notepad-duotone)';
+    }
+
+    &.info {
+      --uno: 'before:layer-components:(i-ph-info-duotone)';
+    }
+
+    &.details {
+      --uno: 'before:layer-components:(i-ph-article-duotone)';
+    }
+
+    &.warning {
+      --uno: 'before:layer-components:(i-ph-warning-duotone)';
+    }
+
+    &.tip {
+      --uno: 'before:layer-components:(i-ph-lightbulb-duotone)';
+    }
+
+    &.important {
+      --uno: 'before:layer-components:(i-ph-star-duotone)';
+    }
+
+    &.caution {
+      --uno: 'before:layer-compoents:(i-ph-siren-duotone)';
+    }
+
+    &.danger {
+      --uno: 'before:layer-components:(i-ph-bomb-duotone)';
+    }
+  }
+
+  /* list */
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: square;
+
+    & li {
+      /* align with the ol's indicator */
+      --uno: '-mx-2 px-2';
+    }
+  }
+
+  ul {
+    --uno: 'pl-6';
+  }
+
+  ol,
+  ul {
+
+    & li {
+      --uno: 'marker:(text-neutral-500)';
+    }
+  }
+
+  /* table */
+  table {
+    --uno: 'my-8 w-full';
+    --uno: 'border-(collapse b-2 t-2)';
+    --uno: 'border-neutral-200';
+
+    & thead {
+      --uno: 'border-b';
+
+      & th {
+        /* have the header middle aligned */
+        --uno: 'important:text-center';
+      }
+    }
+
+    & tbody tr {
+      --uno: 'border-b';
+      --uno: 'border-neutral-700';
+    }
+
+    & th,
+    & td {
+      --uno: 'p-(x-4 y-2)';
+    }
+  }
+
+  /* mark */
+  mark {
+    --uno: 'relative';
+    --uno: 'bg-transparent';
+    --uno: 'text-neutral-100';
+    --uno: 'font-black';
+    --uno: 'before:content-[""]';
+    --uno: 'before:(inline-block h-0.25em w-full absolute bottom-0)';
+    --uno: 'before:(bg-emerald-500/80)';
+  }
+
+  /* hashtag */
+  a[href^='/tags/']:not([id^='fnref'], .header-anchor) {
+    --uno: 'before:(content-empty i-ph-tag-duotone text-sky-600 w-4 h-4 relative inline-block align-middle)';
+    --uno: 'z-1';
+  }
+
+  a .tag {
+    --uno: 'relative';
+    --uno: 'px-1';
+    --uno: 'after:(content-empty bg-neutral-800 w-full h-2px absolute bottom-0 left-0 z-0)';
+    --uno: 'before:(content-empty bg-sky-600 w-0 h-2px absolute bottom-0 left-0 z-1 transition-width)';
+    --uno: 'hover:(before:w-full)';
+    --uno: 'z-0';
+  }
+
+  /* img */
+  figure {
+    /* --uno: 'my-8'; */
+
+    & img {
+      --uno: 'border border-neutral-700';
+      --uno: 'mx-auto';
+    }
+
+    & figcaption {
+      --uno: 'pt-4';
+      --uno: 'text-neutral-400';
+      --uno: 'text-sm/9 text-center';
+    }
+  }
+
+  /* toc */
+  nav.table-of-contents {
+    --uno: 'rounded-r-md';
+    --uno: 'pr-5';
+    --uno: 'fixed top-100px left-0 z-10';
+    --uno: 'max-h-320px min-w-200px max-w-400px';
+    --uno: 'overflow-auto';
+    --uno: 'text-sm';
+
+    --uno: 'bg-neutral-900/60';
+    --uno: 'border border-neutral-700';
+    --uno: 'opacity-10 hover:opacity-100';
+    --uno: 'transition duration-200';
+
+    &::-webkit-scrollbar {
+      --uno: 'w-1px';
+    }
+
+    &:hover {
+      backdrop-filter: blur(10px);
+    }
+
+    & li {
+      list-style: none;
+      --uno: 'my-4 px-0 mx-0';
+    }
+  }
+
+  sup.footnote-ref {
+    --uno: 'transition duration-200';
+    --uno: 'text-neutral-400';
+    --uno: 'hover:(text-sky-400)';
+  }
+
+  .footnotes-sep {
+    --uno: 'mt-16';
+  }
+
+  section.footnotes {
+    --uno: 'text-sm';
+
+    & ol {
+      & li {
+        --uno: 'my-2';
+
+        & p {
+          --uno: 'my-0';
+
+          & a {
+            --uno: 'before:bottom-0';
+          }
+
+          & a.footnote-backref {
+            --uno: 'i-ph-arrow-bend-right-up-duotone';
+
+            --uno: 'transition';
+            --uno: 'text-neutral-400';
+            --uno: 'hover:(text-sky-400)';
+          }
+        }
+      }
+    }
+  }
+}
