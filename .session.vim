@@ -13,13 +13,11 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 pages/gm_011626.md
-badd +11 pages/gm_030626.md
-badd +1 pages/gm_012226.md
-badd +52 slides.md
+badd +1 .session.vim
+badd +12 slides.md
 argglobal
 %argdel
-edit pages/gm_030626.md
+edit slides.md
 wincmd t
 let s:save_winminheight = &winminheight
 let s:save_winminwidth = &winminwidth
@@ -28,7 +26,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt slides.md
+balt .session.vim
 setlocal foldmethod=expr
 setlocal foldexpr=v:lua.vim.treesitter.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -37,14 +35,12 @@ setlocal foldlevel=99
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
-7
-sil! normal! zo
-let s:l = 11 - ((10 * winheight(0) + 13) / 26)
+let s:l = 12 - ((11 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 11
-normal! 03|
+keepjumps 12
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
