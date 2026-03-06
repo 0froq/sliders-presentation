@@ -13,11 +13,17 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +53 slides.md
-badd +14 pages/gm_030626.md
+badd +1 .session.vim
+badd +18 slides.md
+badd +1 pages/gm_011626.md
+badd +20 vite.config.ts
+badd +130 pages/gm_030626.md
+badd +343 styles/base.css
+badd +20 uno.config.mts
+badd +120 pages/gm_101625.md
+badd +3 global-top.vue
 argglobal
 %argdel
-$argadd .git/COMMIT_EDITMSG
 edit pages/gm_030626.md
 wincmd t
 let s:save_winminheight = &winminheight
@@ -27,7 +33,6 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt slides.md
 setlocal foldmethod=expr
 setlocal foldexpr=v:lua.vim.treesitter.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -38,12 +43,14 @@ setlocal foldnestmax=20
 setlocal foldenable
 7
 sil! normal! zo
-let s:l = 14 - ((4 * winheight(0) + 4) / 8)
+13
+sil! normal! zo
+let s:l = 130 - ((3 * winheight(0) + 4) / 8)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 14
-normal! 018|
+keepjumps 130
+normal! 057|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
@@ -59,7 +66,6 @@ if filereadable(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
 set hlsearch
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :

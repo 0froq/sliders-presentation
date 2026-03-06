@@ -1,0 +1,17 @@
+{
+  "id": "T-50a91bb2-7f58-488f-9ddf-20728304f840",
+  "subject": "精简 Slidev 项目依赖",
+  "description": "根据用户确认，删除以下未使用的依赖和配置：\n1. 删除 @slidev/theme-seriph 主题\n2. 删除 plotly.js-dist-min\n3. 删除 markdown-it-footnote 及相关类型定义\n4. 删除 jiti（如未被使用）\n5. 将类型定义包移到 devDependencies\n6. 清理 vite.config.ts 中相关的导入和配置\n7. 清理 slides.md 中的 bibliography 配置",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": [],
+  "metadata": {
+    "type": "dependency_cleanup",
+    "estimated_files": [
+      "package.json",
+      "vite.config.ts",
+      "slides.md"
+    ]
+  },
+  "threadID": "ses_33db844efffekBIO7sSMsUF857"
+}
