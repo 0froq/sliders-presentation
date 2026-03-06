@@ -1,18 +1,10 @@
 html {
-  font-feature-settings:
-    'calt',
-    'ss01',
-    'ss03',
-    'ss04',
-    'ss06',
-    'ss07',
-    'ss08',
-    'ss10',
-    'liga';
+  font-feature-settings: 'calt', 'ss01', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08', 'ss10', 'liga';
 }
 
 html #slide-content.slidev-slide-content .slidev-layout {
-    --uno: 'text-neutral-300 font-thin';
+  --uno: 'text-neutral-300 font-thin';
+  --uno: 'font-serif';
 
   p {
     /* vertical margin for paragraphs */
@@ -73,7 +65,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
   }
 
   /* inline code */
-  :not(pre)>code {
+  :not(pre) > code {
     --uno: 'px-1';
     --uno: 'bg-teal-800/20';
     --uno: 'text-teal-400';
@@ -212,7 +204,6 @@ html #slide-content.slidev-slide-content .slidev-layout {
 
   ol,
   ul {
-
     & li {
       --uno: 'marker:(text-neutral-500)';
     }

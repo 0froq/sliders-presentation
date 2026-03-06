@@ -8,6 +8,11 @@
     "dev": "slidev --open",
     "export": "slidev export"
   },
+  "slidev": {
+    "addons": [
+      "slidev-component-spotlight"
+    ]
+  },
   "dependencies": {
     "@antfu/eslint-config": "^5.4.1",
     "@slidev/cli": "^52.2.5",
@@ -29,6 +34,12 @@
     "vue": "^3.5.22"
   },
   "devDependencies": {
+    "@iconify-json/duo-icons": "^1.2.2",
+    "@iconify-json/openmoji": "^1.2.23",
+    "@iconify-json/simple-icons": "^1.2.72",
+    "@iconify-json/skill-icons": "^1.2.4",
+    "@iconify-json/solar": "^1.2.5",
+    "@iconify-json/twemoji": "^1.2.5",
     "prettier": "^3.6.2",
     "prettier-plugin-slidev": "^1.0.5"
   }

@@ -1,9 +1,9 @@
 ---
 fonts:
-  sans: YshiPen-ShutiTC
+  sans: LXGW Neo ZhiSong Plus
   serif: YshiPen-ShutiTC
-  mono: Monaspace Radon NF, YshiPen-ShutiTC
-  local: ['YshiPen-ShutiTC', 'Monaspace Radon NF']
+  mono: LXGW Bright Code TC
+  local: ['YshiPen-ShutiTC', 'LXGW Bright COde TC', 'LXGW Neo ZhiSong Plus']
 title: Master Slide
 layout: cover
 info: |
@@ -13,6 +13,8 @@ drawings:
 transition: slide-left
 mdc: true
 ---
+
+<!-- <SlidevSpotlight/> -->
 
 # Gms
 
@@ -49,6 +51,6 @@ title: Group Meeting on 01/16/2026
 ---
 
 ---
-src: pages/gm_030526.md
-title: Group Meeting on 03/05/2026
+src: pages/gm_030626.md
+title: Group Meeting on 03/06/2026
 ---
