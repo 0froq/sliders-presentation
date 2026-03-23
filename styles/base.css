@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: url('https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css')
+}
+
 html {
   font-feature-settings: 'calt', 'ss01', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08', 'ss10', 'liga';
 }

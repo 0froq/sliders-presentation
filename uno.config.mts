@@ -1,5 +1,4 @@
 import extractorMdc from '@unocss/extractor-mdc'
-
 import {
   defineConfig,
   presetAttributify,
@@ -20,7 +19,7 @@ export default defineConfig({
   },
   rules: [
     ['font-sans', { 'font-family': 'LXGW Neo ZhiSong Plus' }],
-    ['font-serif', { 'font-family': 'YshiPen-ShutiTC' }],
+    ['font-serif', { 'font-family': 'LXGW WenKai' }],
     ['font-mono', { 'font-family': 'LXGW Bright Code TC' }],
     ['font-stylish', { 'font-family': 'Caveat' }],
     ['font-script', { 'font-family': 'Ephesis' }],

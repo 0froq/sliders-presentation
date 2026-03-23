@@ -27,7 +27,7 @@ layout: two-cols-header
 
 ::right::
 
-![1985-2009 全球湖泊夏季表层水温趋势 (O'Reilly et al., 2015)](/pre-032226-lake-warm-zh/oreilly2015-1.webp)
+![1985-2009 全球湖泊夏季表层水温趋势 (O'Reilly et al., 2015)](/assets/pre-032226-lake-warm-zh/oreilly2015-1.webp)
 
 <style>
 .two-cols-header {
@@ -81,7 +81,7 @@ layout: default
     <span v-mark.highlight.green>97% 的 2,000 余个湖泊在近四十年中显著变暖</span>，
     同时日变化和极端事件也在增强 (Wang et al., 2023; Woolway et al., 2026)。</span>
 
-![湖泊夏季表层水温与邻近大气温度趋势对比 (O'Reilly et al., 2015)](/pre-032226-lake-warm-zh/oreilly2015-2.webp)
+![湖泊夏季表层水温与邻近大气温度趋势对比 (O'Reilly et al., 2015)](/assets/pre-032226-lake-warm-zh/oreilly2015-2.webp)
 
 <!--
 逐字稿（约 20 秒）：
@@ -134,7 +134,7 @@ layout: two-cols
 
 ::right::
 
-![1980s 中欧湖泊表层水温跃升 (Woolway et al., 2017)](/pre-032226-lake-warm-zh/woolway2017-5.webp)
+![1980s 中欧湖泊表层水温跃升 (Woolway et al., 2017)](/assets/pre-032226-lake-warm-zh/woolway2017-5.webp)
 
 <!--
 逐字稿（约 20 秒）：
@@ -167,9 +167,9 @@ layout: two-cols-header
 
 ::right::
 
-![1998-2012 全球表面温度趋势 (Medhaug et al., 2017)](/pre-032226-lake-warm-zh/medhaug2017-3.jpg)
+![1998-2012 全球表面温度趋势 (Medhaug et al., 2017)](/assets/pre-032226-lake-warm-zh/medhaug2017-3.jpg)
 
-![全球增温造成的湖泊混合制度变化 (Woolway et al., 2020)](/pre-032226-lake-warm-zh/woolway2020-6.png)
+![全球增温造成的湖泊混合制度变化 (Woolway et al., 2020)](/assets/pre-032226-lake-warm-zh/woolway2020-6.png)
 
 <style>
 .two-cols-header {
