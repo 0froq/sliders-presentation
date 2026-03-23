@@ -3,7 +3,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/2_areas/research/pre_slide
+cd ~/2_areas/research/slides-presentation
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -14,14 +14,14 @@ else
   set shortmess=aoO
 endif
 badd +22 pages/pre-032226.md
-badd +19 uno.config.mts
-badd +26 styles/base.css
-badd +29 slides.md
-badd +250 pages/pre-032226-lake-warm-zh.md
+badd +21 uno.config.mts
+badd +10 styles/base.css
+badd +14 slides.md
+badd +18 pages/pre-032226-lake-warm-zh.md
 badd +1 styles/index.ts
 argglobal
 %argdel
-edit pages/pre-032226-lake-warm-zh.md
+edit slides.md
 wincmd t
 let s:save_winminheight = &winminheight
 let s:save_winminwidth = &winminwidth
@@ -30,7 +30,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt slides.md
+balt styles/base.css
 setlocal foldmethod=expr
 setlocal foldexpr=v:lua.vim.treesitter.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -39,40 +39,12 @@ setlocal foldlevel=99
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
-14
-sil! normal! zo
-52
-sil! normal! zo
-54
-sil! normal! zo
-99
-sil! normal! zo
-101
-sil! normal! zo
-106
-sil! normal! zo
-154
-sil! normal! zo
-156
-sil! normal! zo
-195
-sil! normal! zo
-197
-sil! normal! zo
-197
-sil! normal! zo
-204
-sil! normal! zo
-229
-sil! normal! zo
-244
-sil! normal! zo
-let s:l = 250 - ((18 * winheight(0) + 12) / 25)
+let s:l = 14 - ((8 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 250
-normal! 017|
+keepjumps 14
+normal! 016|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

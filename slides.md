@@ -1,5 +1,6 @@
 ---
 fonts:
+  providor: coollabs
   sans: LXGW Neo ZhiSong Plus
   serif: LXGW WenKai TC
   mono: LXGW Bright Code TC
