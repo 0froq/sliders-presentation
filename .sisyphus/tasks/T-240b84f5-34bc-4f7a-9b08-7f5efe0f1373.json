@@ -1,0 +1,10 @@
+{
+  "id": "T-240b84f5-34bc-4f7a-9b08-7f5efe0f1373",
+  "subject": "Remove v-click animations",
+  "description": "Delete all v-click directives from pages so content is immediately visible while keeping v-mark highlights.",
+  "status": "completed",
+  "activeForm": "Removing v-click animations",
+  "blocks": [],
+  "blockedBy": [],
+  "threadID": "ses_2e6a79944ffeeXvHHG8AkeoENY"
+}

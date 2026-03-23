@@ -1,0 +1,10 @@
+{
+  "id": "T-c0dfe659-2aa8-45f0-8d78-42c0c6506e84",
+  "subject": "修复 build 后 index.html 控制台报错",
+  "description": "复现问题、定位构建路径配置、修改并验证 build 产物可直接打开",
+  "status": "in_progress",
+  "activeForm": "正在复现并修复 build 后 index.html 报错",
+  "blocks": [],
+  "blockedBy": [],
+  "threadID": "ses_2e6916baaffeO74MeNnaOy603Y"
+}

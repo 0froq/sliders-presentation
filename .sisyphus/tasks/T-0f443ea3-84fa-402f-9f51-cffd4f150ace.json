@@ -1,0 +1,12 @@
+{
+  "id": "T-0f443ea3-84fa-402f-9f51-cffd4f150ace",
+  "subject": "Verify Slidev file integrity",
+  "description": "Run diagnostics and project checks relevant to modified Slidev file.",
+  "status": "completed",
+  "activeForm": "Verifying Slidev file integrity",
+  "blocks": [],
+  "blockedBy": [
+    "T-6fcfb121-0fbe-49e4-814b-8eae6717a740"
+  ],
+  "threadID": "ses_2e6a79944ffeeXvHHG8AkeoENY"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-6fcfb121-0fbe-49e4-814b-8eae6717a740",
+  "subject": "Implement highlight and click sequencing",
+  "description": "Update pages/pre-032226-lake-warm-zh.md to use v-mark.highlight colors and sequential click motion.",
+  "status": "completed",
+  "activeForm": "Implementing highlight and click sequencing",
+  "blocks": [],
+  "blockedBy": [
+    "T-5217a956-a1db-4ea1-a197-1f92b13a7f2a"
+  ],
+  "threadID": "ses_2e6a79944ffeeXvHHG8AkeoENY"
+}

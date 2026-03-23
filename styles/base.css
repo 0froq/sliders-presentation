@@ -3,20 +3,24 @@ html {
 }
 
 html #slide-content.slidev-slide-content .slidev-layout {
-  --uno: 'text-neutral-300 font-thin';
+  --uno: 'bg-stone-50';
+  --uno: 'mx-auto';
+  /* --uno: 'prose prose-stone dark:prose-invert'; */
+  /* --uno: 'max-w-full!'; */
+  --uno: 'text-stone-700 font-thin';
   --uno: 'font-serif';
 
   p {
     /* vertical margin for paragraphs */
-    --uno: 'my-8';
+    --uno: 'my-4';
   }
 
   /* header */
   :is(h1, h2, h3, h4, h5, h6) {
     --uno: 'my-4 w-fit relative block font-normal';
     /* different color for light and dark mode */
-    --uno: 'text-neutral-200';
-    --uno: 'before:(content-[""] absolute w-0 h-2px rounded-sm bg-neutral-300 bottom-0 left-0 transition-width)';
+    --uno: 'text-stone-800';
+    --uno: 'before:(content-[""] absolute w-0 h-2px rounded-sm bg-stone-700 bottom-0 left-0 transition-width)';
     --uno: 'hover:(before:w-full)';
   }
 
@@ -48,12 +52,13 @@ html #slide-content.slidev-slide-content .slidev-layout {
   /* strong */
   strong {
     --uno: 'font-black';
-    --uno: 'text-neutral-50';
+    --uno: 'text-stone-950';
   }
 
   a:not([href^='#'], [href^='/tags/']) {
     --uno: 'relative inline-block text-nowrap';
-    --uno: 'text-neutral-100';
+    --uno: 'text-stone-900';
+    --uno: 'decoration-none';
   }
 
   /* underline */
@@ -67,26 +72,26 @@ html #slide-content.slidev-slide-content .slidev-layout {
   /* inline code */
   :not(pre) > code {
     --uno: 'px-1';
-    --uno: 'bg-teal-800/20';
-    --uno: 'text-teal-400';
+    --uno: 'bg-teal-200/20';
+    --uno: 'text-teal-600';
     --uno: 'text-0.8em';
     --uno: 'rounded-sm';
   }
 
   /* strikethrough */
   s {
-    --uno: 'text-neutral-500';
+    --uno: 'text-stone-500';
   }
 
   /* blockquote */
   blockquote {
     --uno: 'my-4 relative px-8 py-2';
-    --uno: 'bg-neutral-50/5';
-    --uno: 'border-l-4 border-neutral-300';
+    --uno: 'bg-stone-950/5';
+    --uno: 'border-l-4 border-stone-700';
     --uno: 'transition duration-200';
     --uno: 'rounded-none';
     /* blockquote icon */
-    --uno: 'before:(content-[""] i-ph-quotes-duotone block w-8 h-8 absolute right-4 top-4 text-neutral-500 -z-1)';
+    --uno: 'before:(content-[""] i-ph-quotes-duotone block w-8 h-8 absolute right-4 top-4 text-stone-500 -z-1)';
 
     & p {
       --uno: 'my-2';
@@ -106,28 +111,28 @@ html #slide-content.slidev-slide-content .slidev-layout {
     &.note,
     &.info,
     &.details {
-      --uno: 'bg-neutral-900/80';
-      --uno: 'border-(~ neutral-500/50)';
+      --uno: 'bg-stone-100/80';
+      --uno: 'border-(~ stone-500/50)';
 
-      --uno: 'before:(text-neutral-500)';
+      --uno: 'before:(text-stone-500)';
     }
 
     &.warning {
-      --uno: 'bg-yellow-900/80';
+      --uno: 'bg-yellow-100/80';
       --uno: 'border-(~ yellow-500/50)';
 
       --uno: 'before:(text-yellow-500)';
     }
 
     &.tip {
-      --uno: 'bg-indigo-900/80';
+      --uno: 'bg-indigo-100/80';
       --uno: 'border-(~ indigo-500/50)';
 
       --uno: 'before:(text-indigo-500)';
     }
 
     &.important {
-      --uno: 'bg-violet-900/80';
+      --uno: 'bg-violet-100/80';
       --uno: 'border-(~ violet-500/50)';
 
       --uno: 'before:(text-violet-500)';
@@ -135,7 +140,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
 
     &.caution,
     &.danger {
-      --uno: 'bg-red-900/80';
+      --uno: 'bg-red-100/80';
       --uno: 'border-(~ red-500/50)';
 
       --uno: 'before:(text-red-500)';
@@ -146,7 +151,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
     & summary {
       --uno: 'my-8';
       --uno: 'text-2xl';
-      --uno: 'text-neutral-200';
+      --uno: 'text-stone-800';
     }
 
     /* icons */
@@ -205,7 +210,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
   ol,
   ul {
     & li {
-      --uno: 'marker:(text-neutral-500)';
+      --uno: 'marker:(text-stone-500)';
     }
   }
 
@@ -213,7 +218,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
   table {
     --uno: 'my-8 w-full';
     --uno: 'border-(collapse b-2 t-2)';
-    --uno: 'border-neutral-200';
+    --uno: 'border-stone-800';
 
     & thead {
       --uno: 'border-b';
@@ -226,7 +231,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
 
     & tbody tr {
       --uno: 'border-b';
-      --uno: 'border-neutral-700';
+      --uno: 'border-stone-300';
     }
 
     & th,
@@ -239,7 +244,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
   mark {
     --uno: 'relative';
     --uno: 'bg-transparent';
-    --uno: 'text-neutral-100';
+    --uno: 'text-stone-900';
     --uno: 'font-black';
     --uno: 'before:content-[""]';
     --uno: 'before:(inline-block h-0.25em w-full absolute bottom-0)';
@@ -255,7 +260,7 @@ html #slide-content.slidev-slide-content .slidev-layout {
   a .tag {
     --uno: 'relative';
     --uno: 'px-1';
-    --uno: 'after:(content-empty bg-neutral-800 w-full h-2px absolute bottom-0 left-0 z-0)';
+    --uno: 'after:(content-empty bg-stone-200 w-full h-2px absolute bottom-0 left-0 z-0)';
     --uno: 'before:(content-empty bg-sky-600 w-0 h-2px absolute bottom-0 left-0 z-1 transition-width)';
     --uno: 'hover:(before:w-full)';
     --uno: 'z-0';
@@ -266,14 +271,14 @@ html #slide-content.slidev-slide-content .slidev-layout {
     /* --uno: 'my-8'; */
 
     & img {
-      --uno: 'border border-neutral-700';
+      --uno: 'border border-stone-300';
       --uno: 'mx-auto';
     }
 
     & figcaption {
-      --uno: 'pt-4';
-      --uno: 'text-neutral-400';
-      --uno: 'text-sm/9 text-center';
+      --uno: 'pt-1';
+      --uno: 'text-stone-600';
+      --uno: 'text-sm/6 text-center';
     }
   }
 
@@ -286,10 +291,10 @@ html #slide-content.slidev-slide-content .slidev-layout {
     --uno: 'overflow-auto';
     --uno: 'text-sm';
 
-    --uno: 'bg-neutral-900/60';
-    --uno: 'border border-neutral-700';
+    --uno: 'bg-stone-100/60';
+    --uno: 'border border-stone-300';
     --uno: 'opacity-10 hover:opacity-100';
-    --uno: 'transition duration-200';
+    --uno: 'transition duration-800';
 
     &::-webkit-scrollbar {
       --uno: 'w-1px';
@@ -307,8 +312,8 @@ html #slide-content.slidev-slide-content .slidev-layout {
 
   sup.footnote-ref {
     --uno: 'transition duration-200';
-    --uno: 'text-neutral-400';
-    --uno: 'hover:(text-sky-400)';
+    --uno: 'text-stone-600';
+    --uno: 'hover:(text-sky-600)';
   }
 
   .footnotes-sep {
@@ -333,8 +338,8 @@ html #slide-content.slidev-slide-content .slidev-layout {
             --uno: 'i-ph-arrow-bend-right-up-duotone';
 
             --uno: 'transition';
-            --uno: 'text-neutral-400';
-            --uno: 'hover:(text-sky-400)';
+            --uno: 'text-stone-600';
+            --uno: 'hover:(text-sky-600)';
           }
         }
       }

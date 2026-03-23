@@ -3,7 +3,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/2_areas/research/gm_slide
+cd ~/2_areas/research/pre_slide
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -13,18 +13,15 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 .session.vim
-badd +18 slides.md
-badd +1 pages/gm_011626.md
-badd +20 vite.config.ts
-badd +130 pages/gm_030626.md
-badd +343 styles/base.css
-badd +20 uno.config.mts
-badd +120 pages/gm_101625.md
-badd +3 global-top.vue
+badd +22 pages/pre-032226.md
+badd +19 uno.config.mts
+badd +26 styles/base.css
+badd +33 slides.md
+badd +30 pages/pre-032226-lake-warm-zh.md
+badd +1 styles/index.ts
 argglobal
 %argdel
-edit pages/gm_030626.md
+edit pages/pre-032226-lake-warm-zh.md
 wincmd t
 let s:save_winminheight = &winminheight
 let s:save_winminwidth = &winminwidth
@@ -33,6 +30,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
+balt styles/base.css
 setlocal foldmethod=expr
 setlocal foldexpr=v:lua.vim.treesitter.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -41,16 +39,54 @@ setlocal foldlevel=99
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
-7
+14
 sil! normal! zo
-13
+18
 sil! normal! zo
-let s:l = 130 - ((3 * winheight(0) + 4) / 8)
+32
+sil! normal! zo
+51
+sil! normal! zo
+60
+sil! normal! zo
+60
+sil! normal! zo
+62
+sil! normal! zo
+107
+sil! normal! zo
+109
+sil! normal! zo
+114
+sil! normal! zo
+52
+sil! normal! zo
+54
+sil! normal! zo
+99
+sil! normal! zo
+101
+sil! normal! zo
+106
+sil! normal! zo
+154
+sil! normal! zo
+156
+sil! normal! zo
+195
+sil! normal! zo
+197
+sil! normal! zo
+197
+sil! normal! zo
+204
+sil! normal! zo
+let s:l = 30 - ((15 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 130
-normal! 057|
+keepjumps 30
+normal! 048|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

@@ -1,0 +1,12 @@
+{
+  "id": "T-8cc75d66-a4fa-4b80-8bcd-8571b586e5b9",
+  "subject": "Verify Slidev after click removal",
+  "description": "Run checks to ensure deck builds and no v-click remains in pages.",
+  "status": "completed",
+  "activeForm": "Verifying Slidev after click removal",
+  "blocks": [],
+  "blockedBy": [
+    "T-240b84f5-34bc-4f7a-9b08-7f5efe0f1373"
+  ],
+  "threadID": "ses_2e6a79944ffeeXvHHG8AkeoENY"
+}

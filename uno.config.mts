@@ -4,9 +4,9 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetMini,
   presetTagify,
   presetTypography,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -36,17 +36,18 @@ export default defineConfig({
     'page-content': 'mx-auto max-w-[800px] block px-10 min-w-0',
   },
   presets: [
-    presetMini(),
+    presetWind4(),
     presetIcons({
+      scale: 1.2,
       collections: {
         carbon: () => import('@iconify-json/carbon/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
         ph: () => import('@iconify-json/ph/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
-        solar: () => import('@iconify-json/solar/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
-        duo: () => import('@iconify-json/duo-icons/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
-        simple: () => import('@iconify-json/simple-icons/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
-        skill: () => import('@iconify-json/skill-icons/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
-        twe: () => import('@iconify-json/twemoji/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
-        openmj: () => import('@iconify-json/openmoji/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
+        // solar: () => import('@iconify-json/solar/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
+        // duo: () => import('@iconify-json/duo-icons/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
+        // simple: () => import('@iconify-json/simple-icons/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
+        // skill: () => import('@iconify-json/skill-icons/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
+        // twe: () => import('@iconify-json/twemoji/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
+        // openmj: () => import('@iconify-json/openmoji/icons.json', { with: { type: 'json' } }).then(i => i.default as any),
       },
     }),
     presetAttributify({
