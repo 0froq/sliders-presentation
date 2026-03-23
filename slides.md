@@ -1,7 +1,7 @@
 ---
 fonts:
   sans: LXGW Neo ZhiSong Plus
-  serif: LXGW WenKai
+  serif: LXGW WenKai TC
   mono: LXGW Bright Code TC
   # local: ['YshiPen-ShutiTC', 'LXGW Bright Code TC', 'LXGW Neo ZhiSong Plus']
 title: Master Slide
