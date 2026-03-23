@@ -1,0 +1,10 @@
+{
+  "id": "T-3ad64bd0-8e94-40ba-952b-a9c810ab6bc8",
+  "subject": "修复 file:// 打开 dist 的 CORS 报错",
+  "description": "确认浏览器限制根因，添加本地静态预览脚本并验证",
+  "status": "completed",
+  "activeForm": "正在修复 file 协议导致的 CORS 报错",
+  "blocks": [],
+  "blockedBy": [],
+  "threadID": "ses_2e6916baaffeO74MeNnaOy603Y"
+}

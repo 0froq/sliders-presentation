@@ -53,12 +53,12 @@ layout: default
 
 - <span>大气 (surface air temperature):</span>
   - <span>自 1950 年以来长期升温，但叠加了年际到年代际的
-    <span v-mark.highlight.yellow="4">自然变率</span> (Medhaug et al., 2017)。</span>
+    <span v-mark.highlight.yellow>自然变率</span> (Medhaug et al., 2017)。</span>
 - <span>海洋 (ocean heat content):</span>
-  - <span>吸收了 <span v-mark.highlight.red="8">&gt;90% 的过量热量</span>，表层增温相对较慢，
+  - <span>吸收了 <span v-mark.highlight.red>&gt;90% 的过量热量</span>，表层增温相对较慢，
     垂向结构显著，深层持续缓慢升温 (Medhaug et al., 2017)。</span>
 - <span>陆地 (land surface):</span>
-  - <span>热容量小，<span v-mark.highlight.orange="12">增温快于海洋</span>，形成典型的「陆海对比」。</span>
+  - <span>热容量小，<span v-mark.highlight.orange>增温快于海洋</span>，形成典型的「陆海对比」。</span>
 
 <!--
 逐字稿（约 20 秒）：
@@ -75,10 +75,10 @@ layout: default
 
 - <span>湖泊和内陆水体 (lakes & inland waters):</span>
   - <span>综合分析表明，全球湖泊表层水温在近几十年平均以约
-    <span v-mark.highlight.red="4">0.34 ℃/10 年</span> 的速率升高，
+    <span v-mark.highlight.red>0.34 ℃/10 年</span> 的速率升高，
     与甚至略高于邻近大气趋势 (Woolway et al., 2020)。</span>
   - <span>更新的卫星多湖分析显示，约
-    <span v-mark.highlight.green="6">97% 的 2,000 余个湖泊在近四十年中显著变暖</span>，
+    <span v-mark.highlight.green>97% 的 2,000 余个湖泊在近四十年中显著变暖</span>，
     同时日变化和极端事件也在增强 (Wang et al., 2023; Woolway et al., 2026)。</span>
 
 ![湖泊夏季表层水温与邻近大气温度趋势对比 (O'Reilly et al., 2015)](/pre-032226-lake-warm-zh/oreilly2015-2.webp)
@@ -99,16 +99,16 @@ layout: default
 ## 时间结构：加速与「增温停滞」阶段
 
 - <span>表面上看：</span>
-  - <span>20 世纪后半段整体处于 <span v-mark.highlight.red="4">加速变暖</span> 阶段。</span>
+  - <span>20 世纪后半段整体处于 <span v-mark.highlight.red>加速变暖</span> 阶段。</span>
   - <span>1998–2012 常被称为
-    <span v-mark.highlight.orange="6">「global warming hiatus」</span>，
+    <span v-mark.highlight.orange>「global warming hiatus」</span>，
     这段时间全球地表升温速率暂时减弱 (Medhaug et al., 2017)。</span>
 - <span>深层机制：</span>
   - <span>这并不意味着变暖停止，而是：</span>
     - <span>外强迫变化（火山、太阳、气溶胶排放变化等），</span>
     - <span>海洋对热量吸收的变化（如太平洋年代际振荡 PDO 位相），</span>
     - <span>观测覆盖不完整，</span>
-    - <span>共同导致了 <span v-mark.highlight.yellow="18">地表增温率的阶段性减弱</span>
+    - <span>共同导致了 <span v-mark.highlight.yellow>地表增温率的阶段性减弱</span>
       (Medhaug et al., 2017; Hedemann et al., 2017; Miller et al., 2020)。</span>
 
 <!--
@@ -127,7 +127,7 @@ layout: two-cols
 
 - <span>湖泊的例子：</span>
   - <span>中欧 20 个湖泊的长记录显示，
-    在 1980s 末期出现了 <span v-mark.highlight.green="4">年均湖表温度的显著跃升</span>，
+    在 1980s 末期出现了 <span v-mark.highlight.green>年均湖表温度的显著跃升</span>，
     与区域气候的 regime shift 同期 (Woolway et al., 2017)。</span>
   - <span>这种阶段性变化类似于在全球气温中看到的“停滞”与“再加速”结构，
     但在湖泊上还会叠加热结构和混合制度的调整 (Woolway et al., 2021)。</span>
@@ -154,13 +154,13 @@ layout: two-cols-header
 ## 空间与组分不同步：机制相关的特征
 
 - <span>空间模式：</span>
-  - <span>同一时间段，有的地区处于 <span v-mark.highlight.red="4">明显增强的增温</span>，
+  - <span>同一时间段，有的地区处于 <span v-mark.highlight.red>明显增强的增温</span>，
     有的地区则接近停滞甚至略微冷却。</span>
   - <span>在所谓「hiatus」时期，部分中高纬陆地出现冷异常，
     同时热带太平洋–印度洋通过海洋–大气耦合继续吸收和再分配热量
     (Medhaug et al., 2017; Miller et al., 2020)。</span>
 - <span>组分不同步：</span>
-  - <span><span v-mark.highlight.orange="10">海洋加强吸热 → 地表增温在统计上表现为减速</span>；</span>
+  - <span><span v-mark.highlight.orange>海洋加强吸热 → 地表增温在统计上表现为减速</span>；</span>
   - <span>部分湖泊和内陆水体因热结构和混合制度变化，
     对大气信号的响应在幅度和时间上都存在差异
     (Woolway et al., 2020; Wang et al., 2023; Woolway et al., 2025; Woolway et al., 2026)。</span>
@@ -196,14 +196,14 @@ layout: default
 
 - <span>对科学认识：</span>
   - <span>所谓“增温停滞”更接近于
-    <span v-mark.highlight.yellow="4">能量在不同库之间重新分配的阶段</span>，
+    <span v-mark.highlight.yellow>能量在不同库之间重新分配的阶段</span>，
     而不是长期变暖的中止 (Medhaug et al., 2017; Miller et al., 2020)。</span>
   - <span>多圈层、多时间尺度的观测（大气、海洋、湖泊）有助于区分：</span>
     - <span>外强迫 vs. 内部变率，</span>
     - <span>长期趋势 vs. 短期波动 (Woolway et al., 2020; Woolway et al., 2026)。</span>
 - <span>对环境工程与管理：</span>
   - <span>如果只关注某个区域或某类指标的短期停滞，容易
-    <span v-mark.highlight.red="14">低估长期风险</span>：</span>
+    <span v-mark.highlight.red>低估长期风险</span>：</span>
     - <span>湖泊可能在表层均值变化不显著的阶段完成热结构的调整，
       为后续热浪、缺氧、藻华等极端事件提供条件
       (Woolway et al., 2021; Woolway et al., 2022; Wang et al., 2023)。</span>
@@ -239,4 +239,15 @@ layout: default
 - Woolway, R.I., Sharma, S., Smol, J.P., 2022. Lakes in hot water: The impacts of a changing climate on aquatic ecosystems. _BioScience_ 72(11), 1050–1061. https://doi.org/10.1093/biosci/biac052
 - Woolway, R.I., Albergel, C., Frölicher, T.L., Perroud, M., 2022. Severe lake heatwaves attributable to human-induced global warming. _Geophysical Research Letters_ 49, e2021GL097031. https://doi.org/10.1029/2021GL097031
 - Woolway, R.I., et al., 2025. Subsurface heatwaves in lakes. _Nature Climate Change_. https://doi.org/10.1038/s41558-025-02314-0
-- Woolway, R.I., et al., 2026. Emerging changes in lake temperature extremes and variability in global lakes. _[in press]_.
+- Dinh, D., Tong, Y., Feng, L. et al. Emerging changes in lake temperature extremes and variability in South America. Climatic Change 179, 41 (2026). https://doi.org/10.1007/s10584-026-04137-0
+
+<style>
+html #slide-content.slidev-slide-content .slidev-layout ul {
+  list-style-type: number;
+}
+
+* {
+  font-size: 0.87em;
+  line-height: 1.5em;
+}
+</style>

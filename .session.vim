@@ -16,8 +16,8 @@ endif
 badd +22 pages/pre-032226.md
 badd +19 uno.config.mts
 badd +26 styles/base.css
-badd +33 slides.md
-badd +30 pages/pre-032226-lake-warm-zh.md
+badd +29 slides.md
+badd +250 pages/pre-032226-lake-warm-zh.md
 badd +1 styles/index.ts
 argglobal
 %argdel
@@ -30,7 +30,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt styles/base.css
+balt slides.md
 setlocal foldmethod=expr
 setlocal foldexpr=v:lua.vim.treesitter.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -40,24 +40,6 @@ setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
 14
-sil! normal! zo
-18
-sil! normal! zo
-32
-sil! normal! zo
-51
-sil! normal! zo
-60
-sil! normal! zo
-60
-sil! normal! zo
-62
-sil! normal! zo
-107
-sil! normal! zo
-109
-sil! normal! zo
-114
 sil! normal! zo
 52
 sil! normal! zo
@@ -81,12 +63,16 @@ sil! normal! zo
 sil! normal! zo
 204
 sil! normal! zo
-let s:l = 30 - ((15 * winheight(0) + 12) / 25)
+229
+sil! normal! zo
+244
+sil! normal! zo
+let s:l = 250 - ((18 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 30
-normal! 048|
+keepjumps 250
+normal! 017|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
